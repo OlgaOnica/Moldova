@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(../Images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+} 
+main{
+min-height: 100vh;
+}
+header{
+    background-color: #3c5f74;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+header a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+padding: 15px;
+}
+footer{
+    min-height: 55px;
+    background-color: #8a949b;
+    text-align: center;
+    color: black;
+    padding-top: 35px;
+}
+.logo{
+    height: 50px;
+}
+.text{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+.imag{
+    width: 700px;
+    border: 6px solid #000000;
+    box-shadow: 6px 6px 8px gray;
+}
+.centred{
+    text-align: center;
+}
+.pad{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.title{
+    border-bottom: 4px solid #3c5f74 ;
+    margin-bottom: 5px ;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 16px;
+}
+.nl{
+    line-height: 120%;
+    border-left: 6px solid rgb(51, 71, 97) ;
+    padding-left: 12px;
+    padding-right: 26px;
+}
+video {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    margin: 50px auto;
+    border-radius: 8px;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 60px auto;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img{
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.gallery img:hover{
+transform: scale(1.05);
+transition: all 0.3s;
+}
+
+.row{
+    overflow: auto;
+}
+
+[class^= 'col-']{
+    float: left;
+    padding: 5px;
+}
+.col-10{width: 10%;}
+.col-20{width: 20%;}
+.col-30{width: 30%;}
+.col-40{width: 40%;}
+.col-50{width: 50%;}
+.col-60{width: 60%;}
+.col-70{width: 70%;}
+.col-80{width: 80%;}
+.col-90{width: 90%;}
+.col-100{width: 100%;}
+
+.list{
+    line-height: 150%;
+    list-style: linear-gradient(#76be9c,#5a967a);
+}
+
+@media(max-width: 768px) {
+    body{
+font-size: 16px;
+    }
+    [class^= 'col-']{
+        width: 100%;
+    }
+
+    main{
+        margin: 0px;
+      padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .gallery img{
+        width: 120px;
+        height: 120px;
+    }
+}
